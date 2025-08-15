@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://my-portfolio-one-umber-99.vercel.app',
     credentials: true
 }));
 
