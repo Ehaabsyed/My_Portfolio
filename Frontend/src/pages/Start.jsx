@@ -98,7 +98,7 @@ function Start() {
         <p className="md:text-2xl text-xl text-gray-500 font-normal text4">Let me show You...</p>
       </div>
 
-      <div className="line w-[1px] md:left-70 top-110 left-7 md:top-60 md:h-[488.3%] h-[515%] absolute bg-[#5918DF] z-10">
+      <div className="line w-[1px] md:left-70 top-110 left-7 md:top-60 md:h-[480.3%] h-[515%] absolute bg-[#5918DF] z-10">
         <div className="bullet w-2 h-2 rounded-full left-[-3px]  absolute border-2 border-[#5918DF] md:top-0 md:right-[-3.5px] z-20 bg-[#1a1527]"></div>
 
         <div className="md:flex  gap-4 hidden">
