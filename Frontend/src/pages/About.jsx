@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div id='about' className='min-h-[115vh] relative w-full bg-[#14121C] pt-25 pb-25'>
+    <div id='about' className='min-h-[115vh] relative w-full bg-[#14121C] pt-25 pb-8'>
       <h2 className='absolute left-10 top-8 md:top-8 text-gray-400 font-light text-xl md:left-82'>About/&gt;</h2>
       <div className="bullet w-2 h-2 rounded-full md:left-69 left-[25px] top-11  absolute border-2 border-[#5918DF] md:top-11 md:right-[-3.5px] z-20 bg-[#1a1527]"></div>
 

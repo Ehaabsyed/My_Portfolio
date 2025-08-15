@@ -129,7 +129,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="md:min-h-[200vh] min-h-[200vh] h-full relative w-full 10 bg-[#191426]"
+      className="md:min-h-[200vh] min-h-[220vh] h-full relative w-full 10 bg-[#191426]"
     >
       <div className="bullet w-2 h-2 rounded-full md:left-69 left-[25px] top-11 absolute border-2 border-[#5918DF] md:top-11 md:right-[-3.5px] z-20 bg-[#1a1527]"></div>
 
