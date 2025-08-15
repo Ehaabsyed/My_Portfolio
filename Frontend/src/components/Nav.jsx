@@ -97,7 +97,7 @@ function Nav({ activeSection }) {
         className="logo text-2xl md:text-5xl animate-pulse mt-4 text-[#5918DF] hover:scale-105 duration-700 "
         onClick={() => scrollToSection("start")}
       >
-        &lt;<span className="text-white font-extrabold ml-2 mr-2">Ehaab</span>/&gt;
+        &lt;<span className="text-white font-extrabold ml-2 mr-2">SyedDev</span>/&gt;
       </div>
 
       {/* Desktop Links */}
