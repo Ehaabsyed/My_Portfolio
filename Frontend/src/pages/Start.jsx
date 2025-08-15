@@ -89,7 +89,7 @@ function Start() {
   }, []);
 
   return (
-    <div id="start" className='h-screen start w-full bg-[#1a1527] text-white  p-10'>Start
+    <div id="start" className='h-screen start w-full bg-[#1a1527] text-white  p-10'>
       <img src="/bg-port.webp" className="h-full w-full absolute top-0 left-0" alt="" />
       <div className="text h-60 w-fit pl-2 pr-2 gap-6 absolute top-50 left-7 md:top-58 md:left-80 flex flex-col">
         <p className="md:text-xl text-gray-500 text1 font-light">Start/&gt;</p>
