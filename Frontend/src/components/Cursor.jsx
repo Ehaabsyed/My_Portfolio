@@ -45,7 +45,7 @@ function Cursor() {
 
   return (
     <div
-      className="cursor h-7 w-7 rounded-full flex justify-center items-center border-2 bg-transparent border-[#5918DF] fixed pointer-events-none z-50"
+      className="cursor h-7 w-7 hidden rounded-full md:flex justify-center items-center border-2 bg-transparent border-[#5918DF] fixed pointer-events-none z-50"
     >
       <div className="point h-2 w-2 bg-[#5918DF] rounded-full"></div>
     </div>
