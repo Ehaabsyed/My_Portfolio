@@ -23,7 +23,7 @@ function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 2000))
     console.log(data);
 
-    axios.post('http://localhost:3000/send', { data }, { withCredentials: true })
+    axios.post('https://my-portfolio-cfc5.onrender.com/send', { data }, { withCredentials: true })
       .then(response => {
         console.log(response.data);
         if (response.data.success) {
