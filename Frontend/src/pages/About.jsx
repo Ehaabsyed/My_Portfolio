@@ -34,7 +34,7 @@ function About() {
         </div>
         <div className="line text-[10px] flex h-7 w-full ">
           <div className="mo text-[10px] h-full md:min-w-70 min-w-8 flex justify-end  pr-3 text-gray-600 md:text-xl">06</div>
-          <div className="text md:text-xl font-medium pl-7 text-gray-600">{"----"} <span className='text-red-500'>this</span><span className='text-white'>.</span><span className='text-[#4eb98e]'>dayOfBirthTimestamp</span> <span className='text-red-500'>=</span> <span className='text-[#d47e1a]'>602745592</span></div>
+          <div className="text md:text-xl font-medium pl-7 text-gray-600">{"----"} <span className='text-red-500'>this</span><span className='text-white'>.</span><span className='text-[#4eb98e]'>dayOfBirthTimestamp</span> <span className='text-red-500'>=</span> <span className='text-[#d47e1a]'>1186416000</span></div>
         </div>
         <div className="line text-[10px] flex h-7 w-full ">
           <div className="mo text-[10px] h-full md:min-w-70 min-w-8 flex justify-end  pr-3 text-gray-600 md:text-xl">07</div>

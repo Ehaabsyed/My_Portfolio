@@ -1,0 +1,17 @@
+import React from 'react'
+
+function Loader() {
+    return (
+        <div className='h-screen w-full flex justify-center items-center bg-[#1a1527]'>
+
+            <div class="loader">
+                <span class="loader-text">loading</span>
+                <span class="load"></span>
+            </div>
+
+
+        </div>
+    )
+}
+
+export default Loader
