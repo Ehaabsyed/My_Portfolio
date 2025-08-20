@@ -48,6 +48,15 @@ function Start() {
         ease: "power3.out",
         stagger: 0.3,
       });
+      gsap.from(".button", {
+        y: 600,
+        rotateY: 280,
+        duration: 1.5,
+        opacity: 0,
+        delay: 1.4,
+        ease: "power3.out",
+        stagger: 0.3,
+      });
     });
     mm.add("(max-width: 839px)", () => {
   gsap.from(".text1", {
@@ -96,6 +105,7 @@ function Start() {
         <h1 className="md:text-5xl text-2xl font-bold text2">Hi, my name is <span className="text-[#5918DF] name">Ehaab Syed</span></h1>
         <h1 className="md:text-5xl text-2xl font-bold text3">i design and develop Fullstack Websites</h1>
         <p className="md:text-2xl text-xl text-gray-500 font-normal text4">Let me show You...</p>
+      <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1sG5AHmIxe13Gj0o4iRHr-jl2M7LHrtcg/view?usp=sharing"><button className='font-bold button border-none w-fit but cursor-none text-[22px] rounded-full px-6 py-2 md:px-8 md:py-3 bg-[#5918DF] text-white'>Resume</button></a>
       </div>
 
       <div className="line w-[1px] md:left-70 top-110 left-7 md:top-60 md:h-[477.3%] h-[515%] absolute bg-[#5918DF] z-10">
