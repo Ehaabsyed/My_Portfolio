@@ -91,6 +91,15 @@ function Start() {
     ease: "power3.out",
     stagger: 0.3,
   });
+  gsap.from(".button", {
+        y: 600,
+        rotateY: 280,
+        duration: 1.5,
+        opacity: 0,
+        delay: 1.4,
+        ease: "power3.out",
+        stagger: 0.3,
+      });
 });
 
 
