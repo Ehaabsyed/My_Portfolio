@@ -22,11 +22,12 @@ function Contact() {
     //timer of 2s
     await new Promise((resolve) => setTimeout(resolve, 2000))
     console.log(data);
-
+    handleClose()
     axios.post('https://my-portfolio-cfc5.onrender.com/send', { data }, { withCredentials: true })
       .then(response => {
         console.log(response.data);
         if (response.data.success) {
+
           toast.success("Message sent successfully")
           reset()
           handleClose()
