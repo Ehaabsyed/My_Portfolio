@@ -6,27 +6,27 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "testehaabsyed@gmail.com",
-    pass: "nfpkagjwnjviowfh", // App password
+    user: "testehaabsyed@gmail.com", // your email
+    pass: "nfpkagjwnjviowfh",       // app password
   },
 });
 
-const sendMail = async (fromEmail, to, subject, text, html) => {
+const sendMail = async (fromEmail, subject, text, html) => {
   try {
     const info = await transporter.sendMail({
-      from: `"${fromEmail}" <testehaabsyed@gmail.com>`, // show sender's email in name
-      replyTo: fromEmail, // replies go directly to user
-      to,
+      from: `"${fromEmail}" <${fromEmail}>`, // show user's email
+      replyTo: fromEmail,                    // replies go to user
+      to: "testehaabsyed@gmail.com",         // your inbox
       subject,
       text,
       html,
     });
 
-    console.log("📧 Email sent:", info.messageId);
-    return { success: true, message: "Email sent successfully" };
+    console.log("📧 Message received from user:", info.messageId);
+    return { success: true, message: "Message sent to your inbox" };
   } catch (error) {
-    console.error("❌ Failed to send email:", error);
-    return { success: false, message: "Email failed to send" };
+    console.error("❌ Failed to receive message:", error);
+    return { success: false, message: "Message failed to send" };
   }
 };
 
