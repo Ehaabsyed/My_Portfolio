@@ -5,12 +5,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const sendMail = async (fromEmail, to, subject, text, html) => {
   try {
     const data = await resend.emails.send({
-      from: `ScriptSphere <onboarding@resend.dev>`, // default sender (or verify your own domain)
+      from: `Syed Ehaab <testehaabsyed@gmail.com>`, // verified email
       to,
       subject,
       text,
       html,
-      reply_to: fromEmail, // so replies go to the user
+      reply_to: fromEmail, // reply goes to the user
     });
 
     console.log("📧 Email sent:", data.id);
