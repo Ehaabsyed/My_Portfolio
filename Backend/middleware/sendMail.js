@@ -1,32 +1,23 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-// Gmail SMTP transporter
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: "testehaabsyed@gmail.com", // your email
-    pass: "nfpkagjwnjviowfh",       // app password
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-const sendMail = async (fromEmail, subject, text, html) => {
+const sendMail = async (fromEmail, to, subject, text, html) => {
   try {
-    const info = await transporter.sendMail({
-      from: `"${fromEmail}" <${fromEmail}>`, // show user's email
-      replyTo: fromEmail,                    // replies go to user
-      to: "testehaabsyed@gmail.com",         // your inbox
+    const data = await resend.emails.send({
+      from: `ScriptSphere <onboarding@resend.dev>`, // default sender (or verify your own domain)
+      to,
       subject,
       text,
       html,
+      reply_to: fromEmail, // so replies go to the user
     });
 
-    console.log("📧 Message received from user:", info.messageId);
-    return { success: true, message: "Message sent to your inbox" };
+    console.log("📧 Email sent:", data.id);
+    return { success: true, message: "Email sent successfully" };
   } catch (error) {
-    console.error("❌ Failed to receive message:", error);
-    return { success: false, message: "Message failed to send" };
+    console.error("❌ Failed to send email:", error);
+    return { success: false, message: "Email failed to send" };
   }
 };
 
