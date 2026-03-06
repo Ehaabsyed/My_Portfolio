@@ -114,7 +114,7 @@ function Start() {
         <h1 className="md:text-5xl text-2xl font-bold text2">Hi, my name is <span className="text-[#5918DF] name">Ehaab Syed</span></h1>
         <h1 className="md:text-5xl text-2xl font-bold text3">i design and develop Fullstack Websites</h1>
         <p className="md:text-2xl text-xl text-gray-500 font-normal text4">Let me show You...</p>
-      <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1XipMtLX_V453XendGi7KGO880gXkPyOE/view"><button className='font-bold button border-none w-fit but cursor-none text-[22px] rounded-full px-6 py-2 md:px-8 md:py-3 bg-[#5918DF] text-white'>Resume</button></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/14QzRsszX_d_qUXxXn7-W6WBtacKG26Mt/view"><button className='font-bold button border-none w-fit but cursor-none text-[22px] rounded-full px-6 py-2 md:px-8 md:py-3 bg-[#5918DF] text-white'>Resume</button></a>
       </div>
 
       <div className="line w-[1px] md:left-70 top-110 left-7 md:top-60 md:h-[477.3%] h-[515%] absolute bg-[#5918DF] z-10">
